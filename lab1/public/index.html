@@ -11,10 +11,25 @@
         <input type="email" name="email" placeholder="Email" required>
         <input type="password" name="password" placeholder="Пароль" required>
         <input type="tel" name="phoneNumber" placeholder="Телефон">
-        <button type="submit">Зареєструватися</button>
-    </form>
+        <label>Date of Birth:<input type="date" name="dob"></label>
 
-    <h2>Client list</h2>
-    <div id="clientsList"></div>
+        <label>Gender:
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+        </label>
+
+        <label>Country:
+            <select name="country">
+                <option value="Ukraine">Ukraine</option>
+                <option value="USA">USA</option>
+                <option value="Germany">Germany</option>
+            </select>
+        </label>
+
+        <label><input type="checkbox" name="agreement" required> Allow to process personal data</label>
+        <label>Profile photo:<input type="file" name="photo"></label>
+
+        <button type="submit">Register</button>
+    </form>
 </body>
 </html>

@@ -1,23 +1,14 @@
 [
   {
-    "id": 1741112428200,
-    "name": "Матвій Кайда",
+    "id": 1741217075313,
+    "name": "d",
     "email": "kajdamatvej@gmail.com",
-    "password": "123",
-    "phoneNumber": "0668177360"
-  },
-  {
-    "id": 1741112465781,
-    "name": "фіафіаф",
-    "email": "kajdamatvej@gmail.com",
-    "password": "123",
-    "phoneNumber": "0668177"
-  },
-  {
-    "id": 1741112483116,
-    "name": "фіафіаф",
-    "email": "ad@s",
-    "password": "123",
-    "phoneNumber": "0668177"
+    "password": "1234",
+    "phoneNumber": "0668177360",
+    "dob": "2222-02-22",
+    "gender": "male",
+    "country": "USA",
+    "agreement": true,
+    "photo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmMAAAANCAYAAADlqWl+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQ7SURBVHhe7Zw7cuM4EIb/3WvILtfEOABrqhyscoQKHGhOAGVONCcwEmfWCYxAAUPmSJzoAIynpsY6BzcgxJdIsSlTlqz5v6oODDTRjSbYxIMWAGTjic6s95kzqqVubLkuW9r6zFu9V05pyunvBYVCoVAonyn/ghBCCCGEnA1Oxi6EZDnFdJk0iwkhhBBy5fwTtsgIIYQQQsgZ4M4YIYQQQsgZOctkTFsP7yviDFRT6YRo+/k2CSFjoWHPkDcunXPnVULI8ZxlMpYsp5hOc3neNGsJIYQMhXmVkK9LmIyFlWZDnL32lZWCcfv9Pt3qMo+zM+O1eHrax4b3HlY3dcnX4tLGo9SfBMvpFNP5CmmzChjQzhh8pi1CyLVS2xnbxotiZbV4joFohperfuOmWM3L1eR0EWOLLeJFpawz4f9dVMfGTvjPn4QQQsjH6TymTJMV1hsAN3flzpAysM7Vd8+KFWHYZeqYvB3znZYyFq6w5WCNrl9/0J+qWtmOswZ3TQUhvf4IdXoR9atckddsNmKsdLXOQhu7p5Pbq9iyR/gs8keiI4mhrJ1yV89hL3xihLYEMWyOQ2Nd5Xlp22FpKxPYUrpW772Dqz2Xu7g8IgIwmb1UdC3an+ADHPSnPX7H+LP3TdRerulrZ8wc1WerpH88y3RG4UvmFkL+Djp+1VxlxvnMO5OpXZnSmdGljtI2895lRoX65t/FdSZz3mdW7//qrLYNG9Vy70p7oY3ar9T3+VP45DMb9JQO7bTYzG20+C/0p1+nLc4tIulXaMt7lzmr874ok7lqvyR9L+7NzufQ7lCfJf4IdPpjKGunqdd2T2UisNUbQ2TKuJofSlvB2Ggp67UVntudr6FMqbb719L+UOn1pxI/E3wKfd/PB1J/yj7u1/W00/osVfvRbKtPDtgSjmeJzlDpyquXlVsoFMpOOnbGFLT5idkE2Kwrx3RpglVSHtqlv/5giwluv4WC5BXxdoLZj/rKU/33HZNtjFfxsZbGfQRs46fSXrrCU7wFovty1dnnDxTMQwRsnrEMesWO3yAk/kh0hPT2q8Jmjfkyye9RusK8OFZt7/tTvK1crGB+zjCp6CBN8NbcER1Cpz8SnYEx7GxnR/i2aDrHas+JgXTaksRQ40f+MBV+pMnyiHEosfUNtxOgepeBFGn60QC0IfEnsFljvgrxS97wDuDm7qgR9jFGy1ESJONZojMiXzm3EHLF1CZj5Vb7Cx6+v+N50fwuSEEbC7fbdn6ZYVKtRorVegNED5VjofxFVJvU9aHucAPg/Xf9ivT3O4AI90WG6vMnvJj+/KqVDkbij0RHTF+/Srr7Jul7roPosXZs8RgBmNyimp/rxzDdRz2H7eV06gyMYWc7J6DbliCGoV+bt4++6QW2kOA13gDRI168g9XqhC8+iT853fH7bEbKURIk41miMyqXl1sIIcD/9Rl62aG+Lg4AAAAASUVORK5CYII="
   }
 ]
