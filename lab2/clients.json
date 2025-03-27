@@ -47,5 +47,13 @@
     "phoneNumber": "0668177360",
     "agreement": true,
     "photo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAAAzCAYAAAAjKt6MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABxSURBVGhD7dChAQAgDMAw4P+fh6niBRJZ2T0zs1jnDb8yIkbEiBgRI2JEjIgRMSJGxIgYESNiRIyIETEiRsSIGBEjYkSMiBExIkbEiBgRI2JEjIgRMSJGxIgYESNiRIyIETEiRsSIGBEjYkSMiBExIhcVDQRiLhAs2AAAAABJRU5ErkJggg=="
+  },
+  {
+    "id": 1743059661465,
+    "name": "Матвей Кайда",
+    "email": "kajdamatvej@gmail.com",
+    "password": "123",
+    "phoneNumber": "0668177360",
+    "agreement": true
   }
 ]

@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     function showQuestion() {
         if (currentQuestionIndex >= questions.length) {
             nextBtn.style.display = "none";
-            submitBtn.style.display = "block";
             return;
         }
 
