@@ -1,35 +1,20 @@
 <!DOCTYPE html>
-<html lang="uk">
-<head>
-    <title>Client registration</title>
-    <script defer src="script.js"></script>
-</head>
-<body>
-    <h2>Registration form</h2>
-    <form id="registrationForm">
-        <input type="text" name="name" placeholder="Ім'я" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="password" name="password" placeholder="Пароль" required>
-        <input type="tel" name="phoneNumber" placeholder="Телефон">
-        <label>Date of Birth:<input type="date" name="dob"></label>
+<html>
+    <body>
+        <form id = registrationForm>
+            <label>Full name:<input type ="text" name = "name"></label>
+            <label>Email:<input type = "email" name = "email" required></label>
+            <label>Password:<input type = "password" name ="password"required></label>
+            <label>Phone number:<input type = "tel" name = "phoneNumber"></label>
+            <label>Gender:
+                <input type = "radio" name = "gender" value="male">
+                <input type = "radio" name = "gender" value="female">
+            </label>
+            <label><input type="checkbox" name = "agreement" required>Allow to process personal data</label>
+            <label>Profile photo:<input type = "file" name = "photo"></label>
+            <button type = "submit">Register</button>
+        </form>
 
-        <label>Gender:
-            <input type="radio" name="gender" value="male"> Male
-            <input type="radio" name="gender" value="female"> Female
-        </label>
-
-        <label>Country:
-            <select name="country">
-                <option value="Ukraine">Ukraine</option>
-                <option value="USA">USA</option>
-                <option value="Germany">Germany</option>
-            </select>
-        </label>
-
-        <label><input type="checkbox" name="agreement" required> Allow to process personal data</label>
-        <label>Profile photo:<input type="file" name="photo"></label>
-
-        <button type="submit">Register</button>
-    </form>
-</body>
+        <script src="./index.js"></script>
+    </body>
 </html>

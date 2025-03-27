@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLogin.css">
+    <title>Client registration</title>
+    <script defer src="registrationScript.js"></script>
+</head>
+<body>
+    <h2>Registration form</h2>
+    <form id="registrationForm">
+        <input type="text" name="name" placeholder="Ім'я" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Пароль" required>
+        <input type="tel" name="phoneNumber" placeholder="Телефон">
+        <label><input type="checkbox" name="agreement" required> Allow to process personal data</label>
+        <label>Profile photo:<input type="file" name="photo"></label>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
