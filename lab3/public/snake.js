@@ -9,15 +9,17 @@ let food = randomFood();
 let direction = "RIGHT";
 let score = 0;
 let gameInterval;
+let nextDirection = "RIGHT";
 
 document.getElementById("startBtn").addEventListener("click", startGame);
 document.addEventListener("keydown", changeDirection);
 
 function startGame() {
     
-    const head = { x: snake[0].x, y: snake[0].y };
     snake = [{ x: canvasSize / 2, y: canvasSize / 2 }];
+    const head = { x: snake[0].x, y: snake[0].y };
     direction = "RIGHT";
+    nextDirection = "RIGHT";
     score = 0;
     food = randomFood();
     snake.unshift(head);
@@ -34,6 +36,7 @@ function randomFood() {
 
 function updateGame() {
     const head = { x: snake[0].x, y: snake[0].y };
+    direction = nextDirection;
 
     if (direction === "LEFT") head.x -= box;
     if (direction === "RIGHT") head.x += box;
@@ -42,7 +45,7 @@ function updateGame() {
 
     if (head.x < 0 || head.x >= canvasSize || head.y < 0 || head.y >= canvasSize || (snake.length > 3 && checkCollision(head))) {
         clearInterval(gameInterval);
-        alert("Гра закінчена! Очки: " + score);
+        alert("Game over! Score: " + score);
         saveScore(score);
         return;
     }
@@ -77,10 +80,10 @@ function checkCollision(head) {
 
 function changeDirection(event) {
     const key = event.key;
-    if (key === "ArrowUp" && direction !== "DOWN") direction = "UP";
-    if (key === "ArrowDown" && direction !== "UP") direction = "DOWN";
-    if (key === "ArrowLeft" && direction !== "RIGHT") direction = "LEFT";
-    if (key === "ArrowRight" && direction !== "LEFT") direction = "RIGHT";
+    if (key === "ArrowUp" && direction !== "DOWN") nextDirection = "UP";
+    if (key === "ArrowDown" && direction !== "UP") nextDirection = "DOWN";
+    if (key === "ArrowLeft" && direction !== "RIGHT") nextDirection = "LEFT";
+    if (key === "ArrowRight" && direction !== "LEFT") nextDirection = "RIGHT";
 }
 
 async function saveScore(score) {
@@ -97,5 +100,4 @@ async function saveScore(score) {
     
     localStorage.setItem("lastScore", JSON.stringify(result));
 
-    console.log("Результат гри:", JSON.stringify(result, null, 2));
 }
