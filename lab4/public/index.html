@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Інтернет-магазин</title>
     <script defer src="script.js"></script>
 </head>
@@ -10,30 +11,26 @@
     <!-- Шапка сайту -->
     <header>
         <div class="logo">Інтернет-магазин</div>
-        <nav>
-            <ul>
-                <li><a href="#">Головна</a></li>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Контакти</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!-- Основна частина -->
-    <main>
+    <main class="container">
         <aside class="filters">
             <h2>Фільтри</h2>
             <label for="category">Категорія:</label>
             <select id="category">
                 <option value="all">Всі</option>
+                <option value="laptops">Ноутбуки</option>
+                <option value="smartphones">Смартфони</option>
             </select>
             <label for="price">Ціна:</label>
-            <input type="range" id="price" min="0" max="5000" step="100">
+            <input type="range" id="price" min="5000" max="30000" step="500">
         </aside>
         <section class="product-list">
-            <!-- Картки товарів будуть додаватися динамічно -->
+            <!-- Тут будуть картки товарів -->
         </section>
     </main>
+    
 
     <!-- Підвал сайту -->
     <footer>
