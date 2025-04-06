@@ -24,7 +24,25 @@
                 <option value="smartphones">Смартфони</option>
             </select>
             <label for="price">Ціна:</label>
-            <input type="range" id="price" min="5000" max="30000" step="500">
+            <label for="brand">Бренд:</label>
+            <select id="brand">
+                <option value="all">Всі</option>
+                <option value="ASUS">ASUS</option>
+                <option value="Apple">Apple</option>
+                <option value="HP">HP</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Xiaomi">Xiaomi</option>
+                <option value="Lenovo">Lenovo</option>
+                <option value="OnePlus">OnePlus</option>
+                <option value="Dell">Dell</option>
+                <option value="Google">Google</option>
+                <option value="MSI">MSI</option>
+                <option value="Huawei">Huawei</option>
+            </select>
+
+            <input type="range" id="price" min="5000" max="50000" step="500">
+            <span id="price-value">до 50000 грн</span>
+            <button id="apply-filters">Застосувати</button>
         </aside>
         <section class="product-list">
             <!-- Тут будуть картки товарів -->

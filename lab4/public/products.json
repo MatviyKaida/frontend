@@ -1,19 +1,110 @@
 [
-    {
-      "id": 1,
-      "name": "Ноутбук ASUS",
-      "price": 25000,
-      "category": "Ноутбуки",
-      "image": "images/laptop.png",
-      "description": "Потужний ноутбук для роботи і навчання."
-    },
-    {
-      "id": 2,
-      "name": "Смартфон iPhone 13",
-      "price": 32000,
-      "category": "Смартфони",
-      "image": "images/Iphone13.jpg",
-      "description": "Флагманський смартфон Apple з неймовірною камерою."
-    }
+  {
+    "id": 1,
+    "name": "Ноутбук ASUS",
+    "price": 25000,
+    "category": "laptops",
+    "brand": "ASUS",
+    "image": "images/asus.png",
+    "description": "Потужний ноутбук для роботи і навчання."
+  },
+  {
+    "id": 2,
+    "name": "Смартфон iPhone 13",
+    "price": 32000,
+    "category": "smartphones",
+    "brand": "Apple",
+    "image": "images/iphone13.jpg",
+    "description": "Флагманський смартфон Apple з неймовірною камерою."
+  },
+  {
+    "id": 3,
+    "name": "Ноутбук HP Pavilion",
+    "price": 20000,
+    "category": "laptops",
+    "brand": "HP",
+    "image": "images/hp.jpg",
+    "description": "Сучасний ноутбук для повсякденного використання."
+  },
+  {
+    "id": 4,
+    "name": "Смартфон Samsung Galaxy S21",
+    "price": 27000,
+    "category": "smartphones",
+    "brand": "Samsung",
+    "image": "images/samsung.jpg",
+    "description": "Високопродуктивний смартфон з AMOLED-дисплеєм."
+  },
+  {
+    "id": 5,
+    "name": "Ноутбук Apple MacBook Air",
+    "price": 38000,
+    "category": "laptops",
+    "brand": "Apple",
+    "image": "images/macbook.jpg",
+    "description": "Легкий та потужний ноутбук з процесором M1."
+  },
+  {
+    "id": 6,
+    "name": "Смартфон Xiaomi Redmi Note 11",
+    "price": 12000,
+    "category": "smartphones",
+    "brand": "Xiaomi",
+    "image": "images/xiaomi.jpg",
+    "description": "Бюджетний смартфон з великим акумулятором."
+  },
+  {
+    "id": 7,
+    "name": "Ноутбук Lenovo IdeaPad 3",
+    "price": 18000,
+    "category": "laptops",
+    "brand": "Lenovo",
+    "image": "images/lenovo.jpg",
+    "description": "Надійний ноутбук для навчання та офісної роботи."
+  },
+  {
+    "id": 8,
+    "name": "Смартфон OnePlus Nord 2",
+    "price": 22000,
+    "category": "smartphones",
+    "brand": "OnePlus",
+    "image": "images/oneplus.jpg",
+    "description": "Смартфон із відмінною швидкістю та камерою."
+  },
+  {
+    "id": 9,
+    "name": "Ноутбук Dell Inspiron",
+    "price": 23000,
+    "category": "laptops",
+    "brand": "Dell",
+    "image": "images/dell.jpg",
+    "description": "Надійний ноутбук із класичним дизайном."
+  },
+  {
+    "id": 10,
+    "name": "Смартфон Google Pixel 6",
+    "price": 29000,
+    "category": "smartphones",
+    "brand": "Google",
+    "image": "images/pixel6.jpg",
+    "description": "Чистий Android і крута камера від Google."
+  },
+  {
+    "id": 11,
+    "name": "Ноутбук MSI Modern 14",
+    "price": 27000,
+    "category": "laptops",
+    "brand": "MSI",
+    "image": "images/msi.jpg",
+    "description": "Компактний ноутбук із продуктивністю для щоденних задач."
+  },
+  {
+    "id": 12,
+    "name": "Смартфон Huawei P40",
+    "price": 19000,
+    "category": "smartphones",
+    "brand": "Huawei",
+    "image": "images/huawei.jpg",
+    "description": "Смартфон з потужною камерою та сучасним дизайном."
+  }
 ]
-  
