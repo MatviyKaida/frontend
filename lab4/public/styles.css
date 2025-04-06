@@ -13,6 +13,8 @@
 }
 
 .filters {
+    display: flex;
+    flex-direction: column;
     width: 250px;
     padding: 15px;
     border: 1px solid #ddd;
@@ -47,3 +49,29 @@
 .buy-btn:hover {
     background-color: #e65c00;
 }
+
+.animated-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: fadeInLogo 1.5s ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  
+  .animated-logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  @keyframes fadeInLogo {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

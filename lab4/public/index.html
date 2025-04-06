@@ -8,12 +8,13 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Шапка сайту -->
     <header>
-        <div class="logo">Інтернет-магазин</div>
+        <div class="logo animated-logo">
+            <img src="images/logo.png" alt="Логотип" />
+            <span>Інтернет-магазин</span>
+        </div>
     </header>
 
-    <!-- Основна частина -->
     <main class="container">
         <aside class="filters">
             <h2>Фільтри</h2>
@@ -24,6 +25,8 @@
                 <option value="smartphones">Смартфони</option>
             </select>
             <label for="price">Ціна:</label>
+            <input type="range" id="price" min="5000" max="50000" step="500">
+            <span id="price-value">до 50000 грн</span>
             <label for="brand">Бренд:</label>
             <select id="brand">
                 <option value="all">Всі</option>
@@ -39,18 +42,13 @@
                 <option value="MSI">MSI</option>
                 <option value="Huawei">Huawei</option>
             </select>
-
-            <input type="range" id="price" min="5000" max="50000" step="500">
-            <span id="price-value">до 50000 грн</span>
             <button id="apply-filters">Застосувати</button>
         </aside>
         <section class="product-list">
-            <!-- Тут будуть картки товарів -->
+            
         </section>
     </main>
     
-
-    <!-- Підвал сайту -->
     <footer>
         <p>Контактна інформація</p>
         <div class="social-links">
