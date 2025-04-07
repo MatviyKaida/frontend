@@ -13,9 +13,10 @@
             <img src="images/logo.png" alt="Логотип" />
             <span>Інтернет-магазин</span>
         </div>
+        <button id="cart-button">🛒 Кошик (<span id="cart-count">0</span>)</button>
     </header>
 
-    <main class="container">
+    <main class="container">       
         <aside class="filters">
             <h2>Фільтри</h2>
             <label for="category">Категорія:</label>
@@ -47,6 +48,14 @@
         <section class="product-list">
             
         </section>
+        <div id="cart-modal" class="modal hidden">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Ваш кошик</h2>
+              <ul id="cart-items"></ul>
+              <button id="clear-cart">Очистити кошик</button>
+            </div>
+          </div>
     </main>
     
     <footer>
