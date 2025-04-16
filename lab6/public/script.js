@@ -83,11 +83,9 @@ function deleteTask(listIndex, taskIndex) {
 }
 
 function deleteList(listIndex) {
-  if (confirm('Видалити список?')) {
     todoLists.splice(listIndex, 1);
     saveAll();
     renderAllLists();
-  }
 }
 
 addListBtn.addEventListener('click', addList);
