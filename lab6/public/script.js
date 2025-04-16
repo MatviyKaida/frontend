@@ -1,54 +1,94 @@
-const taskInput = document.getElementById('task-input');
-const addTaskBtn = document.getElementById('add-task');
-const taskList = document.getElementById('task-list');
+const listNameInput = document.getElementById('list-name-input');
+const addListBtn = document.getElementById('add-list');
+const listsContainer = document.getElementById('lists-container');
 
-let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+let todoLists = JSON.parse(localStorage.getItem('todoLists')) || [];
 
-function saveTasks() {
-  localStorage.setItem('tasks', JSON.stringify(tasks));
+function saveAll() {
+  localStorage.setItem('todoLists', JSON.stringify(todoLists));
 }
 
-function renderTasks() {
-  taskList.innerHTML = '';
-  tasks.forEach((task, index) => {
+function renderAllLists() {
+  listsContainer.innerHTML = '';
+  todoLists.forEach((list, listIndex) => {
+    const listDiv = document.createElement('div');
+    listDiv.className = 'todo-list';
+
+    listDiv.innerHTML = `
+      <h2>
+        ${list.name}
+        <button onclick="deleteList(${listIndex})">🗑️</button>
+      </h2>
+      <input type="text" placeholder="Нове завдання..." onkeypress="handleAddTask(event, ${listIndex})">
+      <ul class="task-list" id="task-list-${listIndex}"></ul>
+    `;
+
+    listsContainer.appendChild(listDiv);
+    renderTasks(list.tasks, listIndex);
+  });
+}
+
+function renderTasks(tasks, listIndex) {
+  const taskListEl = document.getElementById(`task-list-${listIndex}`);
+  taskListEl.innerHTML = '';
+
+  tasks.forEach((task, taskIndex) => {
     const li = document.createElement('li');
     li.className = task.completed ? 'completed' : '';
     li.innerHTML = `
       <span>${task.text}</span>
       <div>
-        <button onclick="toggleComplete(${index})">✔️</button>
-        <button onclick="deleteTask(${index})">🗑️</button>
+        <button onclick="toggleComplete(${listIndex}, ${taskIndex})">✔️</button>
+        <button onclick="deleteTask(${listIndex}, ${taskIndex})">🗑️</button>
       </div>
     `;
-    taskList.appendChild(li);
+    taskListEl.appendChild(li);
   });
 }
 
-function addTask() {
-  const text = taskInput.value.trim();
-  if (text) {
-    tasks.push({ text, completed: false });
-    taskInput.value = '';
-    saveTasks();
-    renderTasks();
+function addList() {
+  const name = listNameInput.value.trim();
+  if (name) {
+    todoLists.push({ name, tasks: [] });
+    listNameInput.value = '';
+    saveAll();
+    renderAllLists();
   }
 }
 
-function toggleComplete(index) {
-  tasks[index].completed = !tasks[index].completed;
-  saveTasks();
-  renderTasks();
+function handleAddTask(event, listIndex) {
+  if (event.key === 'Enter') {
+    const input = event.target;
+    const text = input.value.trim();
+    if (text) {
+      todoLists[listIndex].tasks.push({ text, completed: false });
+      input.value = '';
+      saveAll();
+      renderAllLists();
+    }
+  }
 }
 
-function deleteTask(index) {
-  tasks.splice(index, 1);
-  saveTasks();
-  renderTasks();
+function toggleComplete(listIndex, taskIndex) {
+  const task = todoLists[listIndex].tasks[taskIndex];
+  task.completed = !task.completed;
+  saveAll();
+  renderAllLists();
 }
 
-addTaskBtn.addEventListener('click', addTask);
-taskInput.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter') addTask();
-});
+function deleteTask(listIndex, taskIndex) {
+  todoLists[listIndex].tasks.splice(taskIndex, 1);
+  saveAll();
+  renderAllLists();
+}
 
-renderTasks();
+function deleteList(listIndex) {
+  if (confirm('Видалити список?')) {
+    todoLists.splice(listIndex, 1);
+    saveAll();
+    renderAllLists();
+  }
+}
+
+addListBtn.addEventListener('click', addList);
+renderAllLists();
