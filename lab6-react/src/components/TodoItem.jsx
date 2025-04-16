@@ -1,12 +1,8 @@
 export default function TodoItem({ task, onToggle, onDelete }) {
     return (
-      <li
-        className={`flex justify-between py-1 ${
-          task.completed ? "line-through text-gray-500" : ""
-        }`}
-      >
+      <li className={`todo-item ${task.completed ? "completed" : ""}`}>
         <span>{task.text}</span>
-        <div>
+        <div className="actions">
           <button onClick={onToggle}>✔️</button>
           <button onClick={onDelete}>🗑️</button>
         </div>

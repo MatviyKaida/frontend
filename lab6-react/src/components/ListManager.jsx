@@ -11,16 +11,14 @@ export default function ListManager({ onAdd }) {
   };
 
   return (
-    <div>
+    <div className="list-manager">
       <input
-        className="border p-2 mr-2"
+        className=""
         placeholder="Назва нового списку..."
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
-      <button className="bg-blue-500 text-white px-4 py-2" onClick={handleAdd}>
-        Створити список
-      </button>
-    </div>
+      <button onClick={handleAdd}>Створити список</button>
+    </div> 
   );
 }

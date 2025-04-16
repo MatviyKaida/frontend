@@ -33,10 +33,10 @@ export default function App() {
   };
 
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Мої ToDo Списки</h1>
+    <div className="app">
+      <h1>Мої ToDo Списки</h1>
       <ListManager onAdd={addList} />
-      <div className="flex gap-4 overflow-x-auto pt-4">
+      <div className="lists-container">
         {lists.map((list, index) => (
           <TodoList
             key={index}

@@ -12,11 +12,11 @@ export default function TodoForm({ onAdd }) {
 
   return (
     <input
-      className="border p-2 w-full mb-2"
+      className="todo-form"
       placeholder="Нове завдання..."
       value={text}
       onChange={(e) => setText(e.target.value)}
       onKeyPress={handleKeyPress}
-    />
+    />  
   );
 }

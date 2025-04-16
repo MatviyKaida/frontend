@@ -19,13 +19,13 @@ export default function TodoList({ name, tasks, onUpdate, onDelete }) {
   };
 
   return (
-    <div className="bg-white p-4 rounded shadow w-[25%] min-w-[250px] max-w-[300px] flex flex-col">
-      <div className="flex justify-between items-center mb-2">
-        <h2 className="font-semibold">{name}</h2>
+    <div className="todo-list">
+      <div className="todo-list-header">
+        <h2>{name}</h2>
         <button onClick={onDelete}>🗑️</button>
       </div>
       <TodoForm onAdd={addTask} />
-      <ul className="overflow-y-auto flex-grow">
+      <ul className="flex-grow overflow-y-auto space-y-2">
         {tasks.map((task, index) => (
           <TodoItem
             key={index}
