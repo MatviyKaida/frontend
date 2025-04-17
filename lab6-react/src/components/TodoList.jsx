@@ -1,5 +1,6 @@
-import TodoForm from "./TodoForm";
-import TodoItem from "./TodoItem";
+import TodoForm from "./TodoForm.jsx";
+import TodoItem from "./TodoItem.jsx";
+import './TodoList.css';
 
 export default function TodoList({ name, tasks, onUpdate, onDelete }) {
   const addTask = (text) => {

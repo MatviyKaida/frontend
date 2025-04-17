@@ -1,3 +1,4 @@
+import './TodoItem.css';
 export default function TodoItem({ task, onToggle, onDelete }) {
     return (
       <li className={`todo-item ${task.completed ? "completed" : ""}`}>

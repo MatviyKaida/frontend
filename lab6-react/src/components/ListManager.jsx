@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './ListManager.css';
 
 export default function ListManager({ onAdd }) {
   const [name, setName] = useState("");

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import ListManager from "./components/ListManager";
-import TodoList from "./components/TodoList";
+import ListManager from "./ListManager.jsx";
+import TodoList from "./TodoList.jsx";
 
 export default function App() {
   const [lists, setLists] = useState([]);
