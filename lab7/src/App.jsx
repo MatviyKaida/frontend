@@ -1,9 +1,10 @@
 import React from "react";
+import "./App.css";
 import Board from "./components/Board";
 
 const App = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="app-container">
       <Board />
     </div>
   );
