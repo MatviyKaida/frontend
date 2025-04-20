@@ -27,30 +27,6 @@
     border: 1px solid black;
   }
   
-  .board-cell > .square {
-    width: 6rem;
-    height: 6rem;
-    border: none;
-    font-size: 2rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    cursor: pointer;
-    padding: 0;
-    box-sizing: border-box;
-    transition: background-color 0.2s;
-  }
-  
-  .board-cell > .square:hover {
-    background-color: #f3f4f6; /* light gray hover */
-  }
-  
-  .invisible {
-    visibility: hidden;
-  }
-  
   .status-text {
     font-size: 1.25rem; /* text-xl */
   }

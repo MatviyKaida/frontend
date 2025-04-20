@@ -1,7 +1,7 @@
 .square {
     width: 6rem;
     height: 6rem;
-    border: 1px solid black;
+    border: none;
     font-size: 2rem;
     font-weight: bold;
     display: flex;
@@ -15,7 +15,7 @@
   }
   
   .square:hover {
-    background-color: #f3f4f6; /* light gray hover effect */
+    background-color: #f3f4f6;
   }
   
   .invisible {

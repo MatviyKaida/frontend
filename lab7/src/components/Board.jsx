@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import calculateWinner from "../utils/calculateWinner";
 import "./Board.css";
+import Square from "./Square";
 
 const createEmptyBoard = () => Array(3).fill(null).map(() => Array(3).fill(null));
 
@@ -71,13 +72,8 @@ const Board = () => {
             <tr key={rowIndex}>
               {row.map((value, colIndex) => (
                 <td key={colIndex} className="board-cell">
-                  <button
-                    className="square"
-                    onClick={() => handleClick(rowIndex, colIndex)}
-                  >
-                    {value || <span className="invisible">-</span>}
-                  </button>
-                </td>
+                <Square value={value} onClick={() => handleClick(rowIndex, colIndex)} />
+              </td>
               ))}
             </tr>
           ))}
