@@ -1,19 +1,12 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import MovieList from "./components/MovieList";
+import moviesData from "./data/movies";
 import "./index.css";
 
 const App = () => {
-  const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState("");
 
-  useEffect(() => {
-    fetch("/movies.json")
-      .then(response => response.json())
-      .then(data => setMovies(data))
-      .catch(err => console.error("Помилка завантаження фільмів:", err));
-  }, []);
-
-  const filteredMovies = movies.filter(movie =>
+  const filteredMovies = moviesData.filter(movie =>
     movie.title.toLowerCase().includes(search.toLowerCase())
   );
 
