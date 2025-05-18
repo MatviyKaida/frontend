@@ -1,4 +1,4 @@
-import MovieCard from "./MovieCard";
+import MovieCard from "./MovieCard.jsx";
 
 const MovieList = ({ movies }) => {
   return (
