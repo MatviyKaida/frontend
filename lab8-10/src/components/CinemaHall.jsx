@@ -1,38 +1,21 @@
-import { useState } from "react";
-// import "./CinemaHall.css"; // або стилі в index.css
-
-const ROWS = 5;
-const COLS = 8;
-const reservedSeats = [2, 5, 13, 21]; // тимчасово захардкожено
-
-const CinemaHall = () => {
-  const [selectedSeats, setSelectedSeats] = useState([]);
-
-  const toggleSeat = (seatIndex) => {
-    if (reservedSeats.includes(seatIndex)) return;
-
-    if (selectedSeats.includes(seatIndex)) {
-      setSelectedSeats(prev => prev.filter(s => s !== seatIndex));
-    } else {
-      setSelectedSeats(prev => [...prev, seatIndex]);
-    }
-  };
-
+import '../index.css'
+const CinemaHall = ({ reservedSeats, selectedSeats, onToggle }) => {
+  const ROWS = 5;
+  const COLS = 8;
   const seats = Array.from({ length: ROWS * COLS }, (_, i) => i);
 
   return (
     <div className="hall">
-      {seats.map((seat, index) => {
+      {seats.map(seat => {
         const isReserved = reservedSeats.includes(seat);
         const isSelected = selectedSeats.includes(seat);
-
         return (
           <div
-            key={index}
+            key={seat}
             className={`seat ${
               isReserved ? "reserved" : isSelected ? "selected" : "free"
             }`}
-            onClick={() => toggleSeat(seat)}
+            onClick={() => !isReserved && onToggle(seat)}
           >
             {seat + 1}
           </div>
