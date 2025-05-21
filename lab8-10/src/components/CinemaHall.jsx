@@ -1,4 +1,5 @@
-import '../index.css'
+import '../styles/CinemaHall.css'
+
 const CinemaHall = ({ reservedSeats, selectedSeats, onToggle }) => {
   const ROWS = 5;
   const COLS = 8;

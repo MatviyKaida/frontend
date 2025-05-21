@@ -1,0 +1,42 @@
+.booking {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.booking h2 {
+  margin-bottom: 1.5rem;
+  font-size: 28px;
+  color: #333;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.free-box {
+  background-color: #4caf50;
+}
+.selected-box {
+  background-color: #2196f3;
+}
+.reserved-box {
+  background-color: #f44336;
+}

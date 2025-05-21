@@ -1,5 +1,6 @@
 import movies from "../data/movies";
 import MovieList from "../components/MovieList";
+import "../styles/Home.css"
 
 const Home = () => {
   return (

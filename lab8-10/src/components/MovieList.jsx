@@ -1,4 +1,5 @@
 import MovieCard from "./MovieCard.jsx";
+import "../styles/MovieList.css"
 
 const MovieList = ({ movies }) => {
   return (

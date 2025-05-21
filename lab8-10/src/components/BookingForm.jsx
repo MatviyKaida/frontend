@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "../styles/BookingForm.css"
 
 const BookingForm = ({ onSubmit }) => {
   const [form, setForm] = useState({

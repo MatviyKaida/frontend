@@ -5,6 +5,7 @@ import CinemaHall from "../components/CinemaHall";
 import BookingForm from "../components/BookingForm";
 import BookingService from "../services/BookingService";
 import { ToastContainer } from "react-toastify";
+import "../styles/Booking.css"
 
 const Booking = () => {
   const { id } = useParams();

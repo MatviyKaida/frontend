@@ -1,0 +1,22 @@
+.home {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home h1 {
+  margin-bottom: 1rem;
+  font-size: 32px;
+  color: #333;
+}
+
+.search {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
