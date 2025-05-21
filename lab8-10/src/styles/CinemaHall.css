@@ -41,3 +41,21 @@
   transform: scale(1.1);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+.cinema-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen {
+  width: 80%;
+  max-width: 500px;
+  background-color: #ccc;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

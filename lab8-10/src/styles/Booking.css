@@ -2,14 +2,21 @@
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрування всього */
 }
 
 .booking h2 {
-  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 800px;
   font-size: 28px;
+  margin-bottom: 1.5rem;
   color: #333;
+  display: flex;
+  justify-content: center;
 }
+
 
 .legend {
   display: flex;
@@ -31,6 +38,7 @@
   border-radius: 4px;
   border: 1px solid #ccc;
 }
+
 .free-box {
   background-color: #4caf50;
 }
@@ -39,4 +47,15 @@
 }
 .reserved-box {
   background-color: #f44336;
+}
+
+/* 🆕 Центрування форми */
+.booking-form {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
 }

@@ -29,3 +29,17 @@ button {
 button:hover {
   background-color: #125a9c;
 }
+.booking-form {
+  margin-top: 50px;
+
+  /* Центрування */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Обмежена ширина + центрування */
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}

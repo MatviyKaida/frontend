@@ -35,18 +35,18 @@ const Booking = () => {
   if (!movie) return <div>Фільм не знайдено</div>;
 
   return (
-    <div>
-      <h2>Бронювання для: {movie.title}</h2>
-      <CinemaHall
-        reservedSeats={reservedSeats}
-        selectedSeats={selectedSeats}
-        onToggle={toggleSeat}
-      />
-      {selectedSeats.length > 0 && (
-        <BookingForm onSubmit={handleBooking} />
-      )}
-      <ToastContainer />
-    </div>
+    <div className="booking">
+    <h2>Бронювання для: {movie.title}</h2>
+    <CinemaHall
+      reservedSeats={reservedSeats}
+      selectedSeats={selectedSeats}
+      onToggle={toggleSeat}
+    />
+    {selectedSeats.length > 0 && (
+      <BookingForm onSubmit={handleBooking} />
+    )}
+    <ToastContainer />
+  </div>
   );
 };
 

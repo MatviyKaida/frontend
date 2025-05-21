@@ -1,4 +1,4 @@
-import '../styles/CinemaHall.css'
+import "../styles/CinemaHall.css";
 
 const CinemaHall = ({ reservedSeats, selectedSeats, onToggle }) => {
   const ROWS = 5;
@@ -6,22 +6,28 @@ const CinemaHall = ({ reservedSeats, selectedSeats, onToggle }) => {
   const seats = Array.from({ length: ROWS * COLS }, (_, i) => i);
 
   return (
-    <div className="hall">
-      {seats.map(seat => {
-        const isReserved = reservedSeats.includes(seat);
-        const isSelected = selectedSeats.includes(seat);
-        return (
-          <div
-            key={seat}
-            className={`seat ${
-              isReserved ? "reserved" : isSelected ? "selected" : "free"
-            }`}
-            onClick={() => !isReserved && onToggle(seat)}
-          >
-            {seat + 1}
-          </div>
-        );
-      })}
+    <div className="cinema-container">
+      <div className="screen">Екран</div>
+      <div className="hall">
+        {seats.map(seat => {
+          const isReserved = reservedSeats.includes(seat);
+          const isSelected = selectedSeats.includes(seat);
+
+          let seatClass = "free";
+          if (isReserved) seatClass = "reserved";
+          else if (isSelected) seatClass = "selected";
+
+          return (
+            <div
+              key={seat}
+              className={`seat ${seatClass}`}
+              onClick={() => !isReserved && onToggle(seat)}
+            >
+              {seat + 1}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
