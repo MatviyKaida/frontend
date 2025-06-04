@@ -1,48 +1,81 @@
-.modal-overlay {
+.calculator-modal {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
 }
 
-.modal-content {
+.calculator-content {
   background: white;
-  padding: 32px;
+  padding: 20px;
   border-radius: 12px;
-  width: 90%;
-  max-width: 400px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  position: relative;
-  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
 }
 
-.modal-close {
-  position: absolute;
-  top: 8px;
-  right: 12px;
+.close-button {
+  align-self: flex-end;
   background: transparent;
   border: none;
-  font-size: 1.5rem;
+  font-size: 24px;
   cursor: pointer;
 }
 
-.modal-content input,
-.modal-content select,
-.modal-content button {
-  margin: 8px 0;
-  padding: 8px;
-  width: 100%;
-  font-size: 1rem;
+.calculator-display {
+  background: #f1f1f1;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  text-align: right;
+}
+
+.input {
+  font-size: 1.4rem;
+  color: black;
 }
 
 .result {
-  color: #000;
-  margin-top: 12px;
-  font-weight: bold;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.calculator-buttons button {
+  padding: 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #e0e0e0;
+  cursor: pointer;
+}
+
+.calculator-buttons button:hover {
+  background: #ccc;
+}
+
+.equals {
+  grid-column: span 1;
+  background-color: #4fc3f7;
+  color: black;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.calculator-buttons button:nth-child(3) {
+  background-color: #ffccbc;
 }
