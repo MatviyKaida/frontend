@@ -1,5 +1,11 @@
-.portfolio-title {
+.portfolio-section {
+  padding: 64px 16px;
   text-align: center;
+}
+
+.portfolio-title {
+  margin: 0 auto 40px;
+  width: max-content;
   margin-bottom: 32px;
   font-size: 2rem;
 }
@@ -27,24 +33,21 @@
   cursor: pointer;
 }
 
-.load-more-container {
-  text-align: center;
-  margin-top: 32px;
-}
-
 .load-more-button {
-  padding: 10px 24px;
+  margin-top: 20px;
+  padding: 12px 28px;
   font-size: 1rem;
   background-color: #000;
   color: #fff;
   border: none;
   cursor: pointer;
   border-radius: 4px;
-  transition: 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .load-more-button:hover {
   background-color: #444;
+  transform: scale(1.05);
 }
 
 /* Адаптація для мобільних */

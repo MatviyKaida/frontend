@@ -30,7 +30,7 @@ const PortfolioSection = () => {
           </div>
         ))}
       </div>
-      <button className="load-more">Load more</button>
+      <button className="load-more-button">LOAD MORE</button>
       <ImageModal
         image={modalImage}
         caption={modalCaption}
