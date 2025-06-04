@@ -1,13 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-const Header = () => {
-  const openCalculator = (e) => {
-    e.preventDefault();
-    const modal = document.getElementById("calculator-modal");
-    if (modal) modal.style.display = "block";
-  };
-
+const Header = ({ onOpenCalculator }) => {
   return (
     <header className="site-header">
       <nav className="nav-bar">
@@ -15,7 +9,16 @@ const Header = () => {
         <a href="#about" className="nav-link">ABOUT</a>
         <a href="#portfolio" className="nav-link">PORTFOLIO</a>
         <a href="#contact" className="nav-link">CONTACT</a>
-        <a href="#" className="nav-link" onClick={openCalculator}>CALCULATOR</a>
+        <a
+          href="#"
+          className="nav-link"
+          onClick={(e) => {
+            e.preventDefault();
+            onOpenCalculator();
+          }}
+        >
+          CALCULATOR
+        </a>
       </nav>
     </header>
   );

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import PortfolioSection from "./components/PortfolioSection";
@@ -7,15 +8,17 @@ import Header from './components/Header';
 import CalculatorModal from './components/CalculatorModal';
 
 function App() {
+  const [isCalcOpen, setCalcOpen] = useState(false);
+
   return (
     <>
-      <Header />
+      <Header onOpenCalculator={() => setCalcOpen(true)} />
       <HeroSection />
       <AboutSection />
       <PortfolioSection />
       <ContactSection />
       <Footer />
-      <CalculatorModal />
+      <CalculatorModal isOpen={isCalcOpen} onClose={() => setCalcOpen(false)} />
     </>
   );
 }
