@@ -1,3 +1,5 @@
+import './HeroSection.css';
+
 const HeroSection = () => (
   <div className="w3-display-container bgimg-1 parallax" id="home">
     <div className="w3-display-middle w3-text-white">

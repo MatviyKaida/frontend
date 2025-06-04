@@ -1,3 +1,5 @@
+import './ContactSection.css';
+
 const ContactSection = () => (
   <>
     <div className="w3-display-container bgimg-3 parallax">
