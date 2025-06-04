@@ -14,7 +14,7 @@ const PortfolioSection = () => {
   }, []);
 
   return (
-    <section className="portfolio-section">
+    <section id="portfolio"className="portfolio-section">
       <h2>My Portfolio</h2>
       <div className="portfolio-grid">
         {images.map((item, index) => (
