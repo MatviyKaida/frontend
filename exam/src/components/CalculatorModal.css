@@ -76,6 +76,3 @@
   grid-column: span 2;
 }
 
-.calculator-buttons button:nth-child(3) {
-  background-color: #ffccbc;
-}
