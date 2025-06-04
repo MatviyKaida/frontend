@@ -1,12 +1,14 @@
+import React from 'react';
 import './HeroSection.css';
 
-const HeroSection = () => (
-  <div className="w3-display-container bgimg-1 parallax" id="home">
-    <div className="w3-display-middle w3-text-white">
-      <h1 className="w3-jumbo">MY WEBSITE</h1>
-      <p>With a parallax effect</p>
-    </div>
-  </div>
-);
+const HeroSection = () => {
+  return (
+    <header className="hero-section w3-display-container w3-center" id="home">
+      <div className="overlay-text">
+        <span className="w3-text-white w3-wide">My Website</span>
+      </div>
+    </header>
+  );
+};
 
 export default HeroSection;

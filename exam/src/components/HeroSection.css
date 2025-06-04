@@ -1,8 +1,20 @@
-.bgimg-1 {
+.hero-section {
+  height: 100vh;
   background-image: url('https://www.w3schools.com/w3images/parallax1.jpg');
-  min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.overlay-text {
+  background-color: rgba(0, 0, 0, 0.8); /* напівпрозорий чорний фон */
+  display: inline-block;
+  padding: 24px 36px;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
