@@ -1,31 +1,41 @@
 import React, { useEffect, useState } from 'react';
 import './PortfolioSection.css';
+import ImageModal from './ImageModal';
 
 const PortfolioSection = () => {
   const [images, setImages] = useState([]);
+  const [modalImage, setModalImage] = useState(null);
+  const [modalCaption, setModalCaption] = useState('');
 
   useEffect(() => {
-    fetch('/public/images.json') 
-      .then((res) => res.json())
-      .then((data) => setImages(data))
-      .catch((err) => {
-        console.error('Failed to load images:', err);
-      });
+    fetch('/images.json')
+      .then(res => res.json())
+      .then(setImages);
   }, []);
 
   return (
-    <section className="portfolio-section w3-container w3-padding-64 w3-light-grey" id="portfolio">
-      <h2 className="portfolio-title">My Portfolio</h2>
+    <section className="portfolio-section">
+      <h2>My Portfolio</h2>
       <div className="portfolio-grid">
-        {images.slice(0, 8).map((src, index) => (
-          <div key={index} className="portfolio-item">
-            <img src={src} alt={`Portfolio ${index + 1}`} />
+        {images.map((item, index) => (
+          <div
+            key={index}
+            className="portfolio-item"
+            onClick={() => {
+              setModalImage(item.src);
+              setModalCaption(item.caption);
+            }}
+          >
+            <img src={item.src} alt={item.caption} />
           </div>
         ))}
       </div>
-      <div className="load-more-container">
-        <button className="load-more-button">Load more</button>
-      </div>
+      <button className="load-more">Load more</button>
+      <ImageModal
+        image={modalImage}
+        caption={modalCaption}
+        onClose={() => setModalImage(null)}
+      />
     </section>
   );
 };

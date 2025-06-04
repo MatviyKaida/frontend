@@ -1,10 +1,34 @@
 [
-  "https://www.w3schools.com/w3images/p1.jpg",
-  "https://www.w3schools.com/w3images/p2.jpg",
-  "https://www.w3schools.com/w3images/p3.jpg",
-  "https://www.w3schools.com/w3images/p4.jpg",
-  "https://www.w3schools.com/w3images/p5.jpg",
-  "https://www.w3schools.com/w3images/p6.jpg",
-  "https://www.w3schools.com/w3images/p7.jpg",
-  "https://www.w3schools.com/w3images/p8.jpg"
+  {
+    "src": "https://www.w3schools.com/w3images/p1.jpg",
+    "caption": "The mist over the mountains"
+  },
+  {
+    "src": "https://www.w3schools.com/w3images/p2.jpg",
+    "caption": "Coffee beans"
+  },
+  {
+    "src": "https://www.w3schools.com/w3images/p3.jpg",
+    "caption": "Bear closeup"
+  },
+  {
+    "src": "https://www.w3schools.com/w3images/p4.jpg",
+    "caption": "Quiet ocean"
+  },
+  {
+    "src": "https://www.w3schools.com/w3images/p5.jpg",
+    "caption": "The mist"
+  },
+  {
+    "src": "https://www.w3schools.com/w3images/p6.jpg",
+    "caption": "My beloved typewriter"
+  },
+  {
+    "src": "https://www.w3schools.com/w3images/p7.jpg",
+    "caption": "Empty ghost train"
+  },
+  {
+    "src": "https://www.w3schools.com/w3images/p8.jpg",
+    "caption": "Sailing"
+  }
 ]
